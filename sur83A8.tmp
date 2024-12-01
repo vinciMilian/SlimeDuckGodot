@@ -1,0 +1,308 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh27qiei1wk5t"]
+
+[ext_resource type="PackedScene" uid="uid://dy6ekqihresvi" path="res://characters/player.tscn" id="1_cdjaw"]
+[ext_resource type="PackedScene" uid="uid://6crltovx3bp0" path="res://trees/static_tree_2d.tscn" id="1_jgjwg"]
+[ext_resource type="Script" path="res://survival_game.gd" id="1_jrc2n"]
+
+[sub_resource type="Curve2D" id="Curve2D_u1lka"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1073, 159, 0, 0, 0, 0, 1766, 156, 0, 0, 0, 0, 1766, 1760, 0, 0, 0, 0, -1081, 1768, 0, 0, 0, 0, -1073, 182)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_jrc2n")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -1409.0
+offset_top = -586.0
+offset_right = 3623.0
+offset_bottom = 2072.0
+color = Color(0, 0.0666667, 0.12549, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_cdjaw")]
+position = Vector2(328, 961)
+
+[node name="Trees" type="Node" parent="."]
+
+[node name="PineTree" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-939, 1048)
+
+[node name="PineTree2" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-651, -83)
+
+[node name="PineTree3" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-510, -247)
+
+[node name="PineTree4" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(565, 1144)
+
+[node name="PineTree5" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(792, 997)
+
+[node name="PineTree6" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(322, 771)
+
+[node name="PineTree7" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-787, 867)
+
+[node name="PineTree8" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-611, 120)
+
+[node name="PineTree10" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(995, 1514)
+
+[node name="PineTree11" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1503, -69)
+
+[node name="PineTree12" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1644, -233)
+
+[node name="PineTree13" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2719, 1158)
+
+[node name="PineTree14" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2946, 1011)
+
+[node name="PineTree15" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2476, 785)
+
+[node name="PineTree16" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1367, 881)
+
+[node name="PineTree17" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1543, 134)
+
+[node name="PineTree18" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2838, 279)
+
+[node name="PineTree9" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2143, -286)
+
+[node name="PineTree19" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3498, 311)
+
+[node name="PineTree20" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3210, -820)
+
+[node name="PineTree21" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3069, -984)
+
+[node name="PineTree22" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1994, 407)
+
+[node name="PineTree23" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1767, 260)
+
+[node name="PineTree24" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-2237, 34)
+
+[node name="PineTree25" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3346, 130)
+
+[node name="PineTree26" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3170, -617)
+
+[node name="PineTree27" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1564, 777)
+
+[node name="PineTree28" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1056, -806)
+
+[node name="PineTree29" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-915, -970)
+
+[node name="PineTree30" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(160, 421)
+
+[node name="PineTree31" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(387, 274)
+
+[node name="PineTree32" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-83, 48)
+
+[node name="PineTree33" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1192, 144)
+
+[node name="PineTree34" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1016, -603)
+
+[node name="PineTree35" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(279, -458)
+
+[node name="PineTree36" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-416, -1023)
+
+[node name="PineTree37" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3257, 2825)
+
+[node name="PineTree38" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-2969, 1694)
+
+[node name="PineTree39" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-2828, 1530)
+
+[node name="PineTree40" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1753, 2921)
+
+[node name="PineTree41" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1526, 2774)
+
+[node name="PineTree42" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1996, 2548)
+
+[node name="PineTree43" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-3105, 2644)
+
+[node name="PineTree44" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-2929, 1897)
+
+[node name="PineTree45" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-1323, 3291)
+
+[node name="PineTree46" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-815, 1708)
+
+[node name="PineTree47" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-674, 1544)
+
+[node name="PineTree48" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(401, 2935)
+
+[node name="PineTree49" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(628, 2788)
+
+[node name="PineTree50" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(158, 2562)
+
+[node name="PineTree51" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-951, 2658)
+
+[node name="PineTree52" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-775, 1911)
+
+[node name="PineTree53" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(520, 2056)
+
+[node name="PineTree54" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(-175, 1491)
+
+[node name="PineTree55" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1543, 2762)
+
+[node name="PineTree56" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1831, 1631)
+
+[node name="PineTree57" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1972, 1467)
+
+[node name="PineTree58" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3047, 2858)
+
+[node name="PineTree59" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3274, 2711)
+
+[node name="PineTree60" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2804, 2485)
+
+[node name="PineTree61" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1695, 2581)
+
+[node name="PineTree62" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(1871, 1834)
+
+[node name="PineTree63" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3477, 3228)
+
+[node name="PineTree64" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3985, 1645)
+
+[node name="PineTree65" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4126, 1481)
+
+[node name="PineTree66" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5201, 2872)
+
+[node name="PineTree67" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5428, 2725)
+
+[node name="PineTree68" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4958, 2499)
+
+[node name="PineTree69" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3849, 2595)
+
+[node name="PineTree70" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4025, 1848)
+
+[node name="PineTree71" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5320, 1993)
+
+[node name="PineTree72" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4625, 1428)
+
+[node name="PineTree73" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2597, -32)
+
+[node name="PineTree74" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2885, -1163)
+
+[node name="PineTree75" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3026, -1327)
+
+[node name="PineTree76" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4101, 64)
+
+[node name="PineTree77" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4328, -83)
+
+[node name="PineTree78" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(3858, -309)
+
+[node name="PineTree79" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2749, -213)
+
+[node name="PineTree80" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(2925, -960)
+
+[node name="PineTree81" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4531, 434)
+
+[node name="PineTree82" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5039, -1149)
+
+[node name="PineTree83" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5180, -1313)
+
+[node name="PineTree84" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(6255, 78)
+
+[node name="PineTree85" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(6482, -69)
+
+[node name="PineTree86" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(6012, -295)
+
+[node name="PineTree87" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(4903, -199)
+
+[node name="PineTree88" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5079, -946)
+
+[node name="PineTree89" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(6374, -801)
+
+[node name="PineTree90" parent="Trees" instance=ExtResource("1_jgjwg")]
+position = Vector2(5679, -1366)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_u1lka")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+unique_name_in_owner = true
+position = Vector2(-1073, 159)
+rotation = -0.00105671

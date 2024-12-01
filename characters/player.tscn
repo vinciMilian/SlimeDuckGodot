@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://dy6ekqihresvi"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_gm0iu"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_sf0ld"]
+[ext_resource type="PackedScene" uid="uid://dufhhmqtt8gdl" path="res://pistol/Weapon2D.tscn" id="2_2edu6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qrbxj"]
+radius = 40.0
+height = 104.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0lt2x"]
+radius = 50.0
+height = 126.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2djro"]
+bg_color = Color(5.71553e-08, 0.114406, 0.0776359, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cenxn"]
+bg_color = Color(0.569869, 0.00686567, 0.162522, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_gm0iu")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_sf0ld")]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -45)
+shape = SubResource("CapsuleShape2D_qrbxj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+position_smoothing_enabled = true
+
+[node name="Gun" parent="." instance=ExtResource("2_2edu6")]
+position = Vector2(0, -44)
+scale = Vector2(0.720001, 0.720001)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-1, -41)
+shape = SubResource("CapsuleShape2D_0lt2x")
+debug_color = Color(0.794069, 0.00261396, 6.73831e-07, 0.42)
+
+[node name="ProgressBar" type="ProgressBar" parent="HurtBox"]
+unique_name_in_owner = true
+offset_left = -66.0
+offset_top = -134.0
+offset_right = 67.0
+offset_bottom = -111.0
+theme_override_colors/font_color = Color(0.406599, 0.00102259, 0.315006, 1)
+theme_override_colors/font_outline_color = Color(0.510713, 0, 0.142852, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_2djro")
+theme_override_styles/fill = SubResource("StyleBoxFlat_cenxn")
+value = 100.0
+show_percentage = false
+
+[connection signal="health_depleted" from="." to="." method="_on_health_depleted"]
